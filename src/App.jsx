@@ -47,7 +47,7 @@ function App() {
           
           <div className="hero-image">
             <img
-              src="public/fotoEmpresa/7v.jpg"
+              src="public/fotoEmpresa/empresa.jpg"
               alt="Transportes Cabrera"
             />
           </div>
@@ -91,7 +91,7 @@ function App() {
             <article className="service-card">
               <div className="service-icon">
                 <img
-                  src="public/fotoEmpresa/CONDUCTOR'S.jpg"
+                  src="public/fotoEmpresa/conductor.jpg"
                   alt="Conductor de Transportes Cabrera"
                  />
                </div>
