@@ -1,0 +1,433 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #1f2937;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  height: 72px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: 800;
+  color: #166534;
+}
+
+.logo span {
+  color: #22c55e;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 32px;
+}
+
+.navbar nav a {
+  color: #374151;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.navbar nav a:hover {
+  color: #16a34a;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero-section {
+  min-height: 620px;
+  padding: 80px 7%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+
+  background: linear-gradient(
+    135deg,
+    #f0fdf4,
+    #ffffff
+  );
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-tag {
+  color: #16a34a;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 18px;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  color: #14532d;
+}
+
+.hero-content h1 span {
+  color: #16a34a;
+}
+
+.hero-description {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #4b5563;
+  margin-bottom: 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 13px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: 0.2s;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: #16a34a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #15803d;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  border: 2px solid #16a34a;
+  color: #15803d;
+  background: white;
+}
+
+.btn-secondary:hover {
+  background: #f0fdf4;
+}
+
+/* =========================
+   HERO IMAGE
+========================= */
+.hero-image {
+  width: 45%;
+  min-width: 350px;
+}
+
+.image-placeholder {
+  height: 390px;
+  border-radius: 20px;
+
+  background: #dcfce7;
+  border: 2px dashed #86efac;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.image-placeholder span {
+  font-size: 90px;
+  margin-bottom: 20px;
+}
+
+.image-placeholder p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #166534;
+}
+
+.image-placeholder small {
+  margin-top: 8px;
+  color: #4b5563;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+  padding: 90px 7%;
+}
+
+.section-light {
+  background: #f8fafc;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title p {
+  color: #16a34a;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  color: #14532d;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.service-card {
+  padding: 35px 28px;
+  background: white;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+
+  text-align: center;
+
+  transition: 0.25s;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  border-color: #86efac;
+}
+
+.service-icon {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  color: #14532d;
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* =========================
+   UNITS
+========================= */
+
+.units-placeholder {
+  max-width: 900px;
+  min-height: 300px;
+  margin: auto;
+
+  border-radius: 18px;
+  background: white;
+  border: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.units-placeholder div {
+  max-width: 550px;
+}
+
+.units-placeholder span {
+  font-size: 65px;
+}
+
+.units-placeholder h3 {
+  margin: 15px 0 10px;
+  color: #14532d;
+  font-size: 24px;
+}
+
+.units-placeholder p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* =========================
+   OPINIONS
+========================= */
+
+.opinion-placeholder {
+  max-width: 700px;
+  margin: auto;
+  padding: 45px;
+
+  text-align: center;
+
+  background: #f0fdf4;
+  border-radius: 18px;
+}
+
+.opinion-placeholder span {
+  font-size: 55px;
+}
+
+.opinion-placeholder h3 {
+  margin: 15px 0 10px;
+  color: #14532d;
+  font-size: 24px;
+}
+
+.opinion-placeholder p {
+  color: #4b5563;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  padding: 40px 7%;
+
+  background: #14532d;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+.footer h3 {
+  margin-bottom: 6px;
+}
+
+.footer p {
+  color: #d1fae5;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .navbar nav {
+    display: none;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    padding: 60px 5%;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 700px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+
+  .section {
+    padding: 70px 5%;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* =========================
+   IMAGEN EMPRESA
+========================= */
+.hero-image img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 30px;
+  display: block;
+}
+
+/* =========================
+   IMAGEN CONDUCTORES
+========================= */
+.service-icon img {
+  width: 100%;
+  height: 900%;
+  object-fit: cover;
+  border-radius: 50%;
+}
